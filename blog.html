@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.4/dist/full.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+<body class="max-w-7xl mx-auto my-6 p-2">
+
+    
+    
+    <div class="mockup-window border bg-base-300">&nbsp;&nbsp;
+         1. What is the diffference between map()  , filter()  , forEach()  , and find()  ?
+        <div class="flex justify-start px-4 py-16 bg-base-200">
+            
+            The map() method creates a new array by performing a function on each array element.It does not execute the function for array elements without values.Again it does not change the original array.
+            <br> <br>
+            The filter() method creates a new array with array elements that pass a test. <br> <br>
+
+            The forEach() method calls a function (a callback function) once for each array element. <br>
+            <br>
+            The find() method returns the value of the first array element that passes a test function.
+
+
+        </div>
+      </div>
+
+      <br> <br>
+
+      <div class="mockup-window border bg-base-300">&nbsp;&nbsp;
+        2. Write down the difference between LocanStorage Session Storage and Cookies
+        <div class="flex justify-start px-4 py-16 bg-base-200">
+            
+           We can store data by key, value pair in local storage. the data stored in localStorage will remain save if we close the tab or the browseer until we clear the data from it.
+
+           But, Data saved in Session storage will be lost if we close the tab or the browder.
+
+           On the otherhand, Cookies have an expiry date. You can set it to a very far away date, but it still expires. On the other hand, data in the local storage does not expire and will be available any time the user opens your website. The only way to clear local storage is either manually with code or if the user clears their browser storage manually.
+
+
+        </div>
+      </div>
+
+      <br> <br>
+
+      <div class="mockup-window border bg-base-300">&nbsp;&nbsp;
+        3. What is Event Loop?
+        <div class="flex justify-start px-4 py-16 bg-base-200">
+            
+            Event loop is just a guardian who keeps a good communication with Call Stack and Callback Queue. It checks if the call stack is free, then lets know the callback queue. Then Callback queue passes the callback function to Call stack to be executed. When all the callback functions are executed, the call stack is out and global execution context is free.
+
+
+        </div>
+      </div>
+
+      <br> <br>
+
+      
+      
+
+      <div class="mockup-window border bg-base-300">&nbsp;&nbsp;
+        4. Explain the working strategy of quizTimer() Function
+        <div class="flex justify-start px-4 py-16 bg-base-200">
+            
+            First of all quizTimer() is a arrow function. it resived a perameter named dismiss. In this function there is a condisional statement which is checking the value of dismiss.
+            The value of the dismiss variable can be true or false. If the value is tru then it calls a function named clearInterval() with a perameter time. clearInterval() function will stop a setInterval function after the time  which is stored in time variable. 
+
+
+        </div>
+      </div>
+
+      <br> <br>
+
+      <div class="mockup-window border bg-base-300">&nbsp;&nbsp;
+        5. Explain how chooseQuiz() Function works
+        <div class="flex justify-start px-4 py-16 bg-base-200">
+            The chooseQuiz Function receives two perameters. One is index and another is a string named givenAns. Then  it call find function over answers array and check the equality of ans id of each ans  with if of index received in the function of quizData array . if it matched theb=n it will be stored in the variable isExist. 
+            than a variable named serial is taken and set it value to zero. The using a for loop the answer array is iterated and checked  if the ids are stored in the isExist object is equal to the quiz id. if the condition passed  then it slices  the answer array from serial (0) index to before 1 index and add data data of quizData  by spread operator and givenAns too. and breaks the loop. otherwise increment the value of serial. 
+
+            On the other hand, if isExist value return false then else block will be exicute.  In this block spreaded quizData and givenAns is pushed  to answer array.   finally the displayAnswers function is called and the value of answer is passed through the function as argument.
+            
+             
+
+
+        </div>
+      </div>
+    
+</body>
+</html>
